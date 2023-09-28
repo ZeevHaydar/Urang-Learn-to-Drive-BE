@@ -1,0 +1,17 @@
+{
+    "type": "pg",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "123Haidar!",
+    "database": "ultd",
+    "synchronize": false,
+    "logging": true,
+    "entities": ["./src/entities/*.ts"],
+    "migrations": ["./src/migrations/*.ts"],
+    "migrationsTableName":"ultd_migration",
+    "cli": {
+      "entitiesDir": "./src/entities",
+      "migrationsDir": "./src/migrations"
+    }
+  }
