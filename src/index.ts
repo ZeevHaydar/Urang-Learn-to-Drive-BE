@@ -8,15 +8,6 @@ dotenv.config();
 const app: Application = express();
 const port = process.env.PORT || 8000;
 
-// myDataSource
-//     .initialize()
-//     .then(() => {
-//         console.log("Data Source has been initialized!")
-//     })
-//     .catch((err) => {
-//         console.error("Error during Data Source initialization:", err)
-//     })
-
 app.get('/', (req: Request, res: Response) => {
   res.send('Welcome to Express & TypeScript Server');
 });
